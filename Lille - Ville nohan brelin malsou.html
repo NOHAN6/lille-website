@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<!-- saved from url=(0087)file:///C:/Users/NOHAN.BRELINMALSOU/Downloads/page_exemple_2/page_exemple_2/index.html# -->
+<html lang="fr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lille - Ville en France</title>
+    <style>
+        /* Global Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f4;
+            color: #333;
+            font-size: 16px;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: row;
+        }
+
+        /* Sidebar Navigation */
+        nav {
+            width: 250px;
+            background-color: #2c3e50;
+            padding-top: 30px;
+            position: fixed;
+            height: 100vh;
+            box-shadow: 2px 0px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        nav ul li {
+            padding: 15px;
+            text-align: center;
+            background-color: #34495e;
+            margin: 5px 0;
+            transition: background-color 0.3s;
+        }
+
+        nav ul li:hover {
+            background-color: #1abc9c;
+            cursor: pointer;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+        }
+
+        /* Main Content Area */
+        .main-content {
+            margin-left: 250px;
+            padding: 40px;
+            width: 100%;
+            transition: margin-left 0.3s;
+        }
+
+        header {
+            background-color: #2980b9;
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+        }
+
+        header h1 {
+            font-size: 3rem;
+        }
+
+        .section {
+            padding: 40px;
+            background-color: #fff;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s;
+        }
+
+        .section:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        h2 {
+            font-size: 2rem;
+            color: #2980b9;
+            margin-bottom: 15px;
+        }
+
+        .links a {
+            display: block;
+            background-color: #2980b9;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            text-decoration: none;
+            margin-top: 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .links a:hover {
+            background-color: #1abc9c;
+        }
+
+        .products {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+        }
+
+        .product {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .product img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .product h3 {
+            margin-top: 10px;
+            color: #2980b9;
+        }
+
+        .product p {
+            font-size: 1rem;
+            margin-top: 10px;
+            color: #555;
+        }
+
+        .product button {
+            background-color: #2980b9;
+            color: white;
+            border: none;
+            padding: 10px;
+            width: 100%;
+            cursor: pointer;
+            font-size: 1rem;
+            border-radius: 5px;
+            margin-top: 15px;
+            transition: background-color 0.3s;
+        }
+
+        .product button:hover {
+            background-color: #1abc9c;
+        }
+
+        .cart {
+            margin-top: 20px;
+        }
+
+        .cart button {
+            background-color: #e74c3c;
+            color: white;
+            padding: 15px;
+            border: none;
+            font-size: 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        footer {
+            background-color: #2980b9;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .section img {
+            width: 100%;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        /* Payment Section */
+        .payment-form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .payment-form input {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .payment-form button {
+            background-color: #2980b9;
+            color: white;
+            padding: 15px;
+            border: none;
+            font-size: 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .payment-form button:hover {
+            background-color: #1abc9c;
+        }
+    </style>
+<style type="text/css" id="operaUserStyle"></style></head>
+<body>
+
+<!-- Sidebar Navigation -->
+<nav>
+    <ul>
+        <li><a href="file:///C:/Users/NOHAN.BRELINMALSOU/Downloads/page_exemple_2/page_exemple_2/index.html#about">À propos</a></li>
+        <li><a href="file:///C:/Users/NOHAN.BRELINMALSOU/Downloads/page_exemple_2/page_exemple_2/index.html#info">Informations pratiques</a></li>
+        <li><a href="file:///C:/Users/NOHAN.BRELINMALSOU/Downloads/page_exemple_2/page_exemple_2/index.html#gallery">Galerie</a></li>
+        <li><a href="file:///C:/Users/NOHAN.BRELINMALSOU/Downloads/page_exemple_2/page_exemple_2/index.html#reviews">Avis</a></li>
+        <li><a href="file:///C:/Users/NOHAN.BRELINMALSOU/Downloads/page_exemple_2/page_exemple_2/index.html#restaurants">Restaurants</a></li>
+        <li><a href="file:///C:/Users/NOHAN.BRELINMALSOU/Downloads/page_exemple_2/page_exemple_2/index.html#activities">Activités</a></li>
+        <li><a href="file:///C:/Users/NOHAN.BRELINMALSOU/Downloads/page_exemple_2/page_exemple_2/index.html#events">Événements</a></li>
+        <li><a href="file:///C:/Users/NOHAN.BRELINMALSOU/Downloads/page_exemple_2/page_exemple_2/index.html#reservation">Réservation</a></li>
+        <li><a href="file:///C:/Users/NOHAN.BRELINMALSOU/Downloads/page_exemple_2/page_exemple_2/index.html#shop">Boutique</a></li>
+    </ul>
+</nav>
+
+<!-- Main Content -->
+<div class="main-content">
+    <!-- Header -->
+    <header>
+        <h1>Lille, Ville en France</h1>
+        <p>Par Nohan Brelin Malsou</p>
+    </header>
+
+    <!-- Section: À propos -->
+    <div id="about" class="section">
+        <h2>À propos de Lille</h2>
+        <p>Lille est une ville située dans le nord de la France, connue pour son architecture unique, ses musées et son atmosphère vibrante. C'est une destination touristique incontournable !</p>
+        <img src="https://via.placeholder.com/800x400?text=Lille" alt="Ville de Lille">
+    </div>
+
+    <!-- Section: Informations pratiques -->
+    <div id="info" class="section">
+        <h2>Informations pratiques</h2>
+        <p>Il y a de nombreux moyens de se rendre à Lille, que ce soit par train, avion ou voiture. La ville est bien desservie par les transports publics, ce qui facilite la découverte des sites touristiques.</p>
+    </div>
+
+    <!-- Section: Galerie -->
+    <div id="gallery" class="section">
+        <h2>Galerie</h2>
+        <p>Explorez la beauté de Lille à travers ces images.</p>
+        <img src="https://via.placeholder.com/800x400?text=Galerie+Lille" alt="Galerie Lille">
+    </div>
+
+    <!-- Section: Avis -->
+    <div id="reviews" class="section">
+        <h2>Avis</h2>
+        <p>Découvrez ce que les visiteurs disent de Lille !</p>
+        <blockquote>"Une ville magnifique, pleine de culture et d'histoire!" - Jean Dupont</blockquote>
+    </div>
+
+    <!-- Section: Restaurants -->
+    <div id="restaurants" class="section">
+        <h2>Restaurants</h2>
+        <p>Voici quelques restaurants populaires de Lille :</p>
+        <ul>
+            <li><a href="https://www.tripadvisor.com/Restaurant_Review-g187178-d2336360-Reviews-Le_Palais_des_Beaux_Arts-Lille_Nord_Hauts_de_France.html" target="_blank">Le Palais des Beaux-Arts</a></li>
+            <li><a href="https://www.tripadvisor.com/Restaurant_Review-g187178-d2315991-Reviews-Le_Comptoir_des_Flandres-Lille_Nord_Hauts_de_France.html" target="_blank">Le Comptoir des Flandres</a></li>
+            <li><a href="https://www.tripadvisor.com/Restaurant_Review-g187178-d2390000-Reviews-La_Table_de_Florence-Lille_Nord_Hauts_de_France.html" target="_blank">La Table de Florence</a></li>
+        </ul>
+    </div>
+
+    <!-- Section: Activités -->
+    <div id="activities" class="section">
+        <h2>Activités</h2>
+        <p>Lille propose de nombreuses activités, comme :</p>
+        <ul>
+            <li><a href="https://www.tripadvisor.com/Attraction_Review-g187178-d190367-Reviews-Palais_des_Beaux_Arts-Lille_Nord_Hauts_de_France.html" target="_blank">Visite du Palais des Beaux-Arts</a></li>
+            <li><a href="https://www.lonelyplanet.com/france/nord-pas-de-calais/lille/vieux-lille/a/poi-sig/406622/360853" target="_blank">Balade dans le Vieux Lille</a></li>
+            <li><a href="https://www.tourisme-lille.com/fr/marche-de-noel-lille" target="_blank">Découverte des marchés de Noël</a></li>
+        </ul>
+    </div>
+
+    <!-- Section: Événements -->
+    <div id="events" class="section">
+        <h2>Événements</h2>
+        <p>Les événements à ne pas manquer à Lille :</p>
+        <ul>
+            <li><a href="https://www.lillebd.org/" target="_blank">Festival de la Bande Dessinée</a></li>
+            <li><a href="https://www.braderie.lille.fr/" target="_blank">Braderie de Lille</a></li>
+            <li><a href="https://www.tourisme-lille.com/fr/marche-de-noel-lille" target="_blank">Marché de Noël</a></li>
+        </ul>
+    </div>
+
+    <!-- Section: Réservation -->
+    <div id="reservation" class="section">
+        <h2>Réservation</h2>
+        <p>Réservez votre séjour à Lille dès aujourd'hui !</p>
+        <a href="https://www.booking.com/" target="_blank">Réserver maintenant sur Booking.com</a>
+    </div>
+
+    <!-- Section: Boutique -->
+    <div id="shop" class="section">
+        <h2>Boutique de Souvenirs</h2>
+        <p>Découvrez nos produits locaux et souvenirs de Lille ! Idéal pour ramener un souvenir unique de votre visite.</p>
+        <div class="products">
+            <div class="product">
+                <img src="https://via.placeholder.com/200" alt="Produit 1">
+                <h3>Souvenir Lille</h3>
+                <p>Un joli souvenir pour vous rappeler Lille.</p>
+                <p><strong>Prix: €15</strong></p>
+                <button onclick="addToCart(&#39;Souvenir Lille&#39;, 15)">Ajouter au panier</button>
+            </div>
+            <div class="product">
+                <img src="https://via.placeholder.com/200" alt="Produit 2">
+                <h3>Magnet Lille</h3>
+                <p>Magnets personnalisés de Lille pour votre réfrigérateur.</p>
+                <p><strong>Prix: €5</strong></p>
+                <button onclick="addToCart(&#39;Magnet Lille&#39;, 5)">Ajouter au panier</button>
+            </div>
+            <div class="product">
+                <img src="https://via.placeholder.com/200" alt="Produit 3">
+                <h3>Carte postale de Lille</h3>
+                <p>Une carte postale vintage de Lille.</p>
+                <p><strong>Prix: €2</strong></p>
+                <button onclick="addToCart(&#39;Carte postale de Lille&#39;, 2)">Ajouter au panier</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cart Section -->
+    <div class="cart">
+        <h3>Votre Panier</h3>
+        <ul id="cart-list"></ul>
+        <p><strong>Total: €<span id="total-price">0</span></strong></p>
+        <button onclick="checkout()">Passer à la caisse</button>
+    </div>
+
+    <!-- Payment Form -->
+    <div id="payment-form" class="section" style="display: none;">
+        <h2>Paiement</h2>
+        <form class="payment-form" onsubmit="submitPayment(event)">
+            <input type="text" id="name" placeholder="Nom complet" required="">
+            <input type="email" id="email" placeholder="Email" required="">
+            <input type="text" id="card" placeholder="Numéro de carte bancaire" required="">
+            <input type="text" id="exp-date" placeholder="Date d&#39;expiration (MM/AA)" required="">
+            <input type="text" id="cvv" placeholder="CVV" required="">
+            <button type="submit">Payer maintenant</button>
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Lille, Ville en France - Tous droits réservés.</p>
+    </footer>
+</div>
+
+<script>
+    let cart = [];
+
+    function addToCart(product, price) {
+        cart.push({ product, price });
+        updateCart();
+    }
+
+    function updateCart() {
+        const cartList = document.getElementById('cart-list');
+        cartList.innerHTML = '';
+        let total = 0;
+        cart.forEach(item => {
+            const li = document.createElement('li');
+            li.textContent = `${item.product} - €${item.price}`;
+            cartList.appendChild(li);
+            total += item.price;
+        });
+        document.getElementById('total-price').textContent = total;
+    }
+
+    function checkout() {
+        if (cart.length === 0) {
+            alert('Votre panier est vide');
+            return;
+        }
+        document.getElementById('payment-form').style.display = 'block';
+    }
+
+    function submitPayment(event) {
+        event.preventDefault();
+        alert('Paiement effectué avec succès !');
+        cart = [];
+        updateCart();
+        document.getElementById('payment-form').style.display = 'none';
+    }
+</script>
+
+
+
+
+
+
+
+</body></html>
